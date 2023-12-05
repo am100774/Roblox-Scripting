@@ -1,19 +1,70 @@
-<script>
+
+ <script>
 alert('Hello! Welcome to my website! This website is all about roblox scripting')
+
 </script>
 <html>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="topnav" id="myTopnav">
+  <a href="https://www.w3schools.com">Videos</a>
+  <a href="#images" class="active">Images</a>
+
+
+  </a>
+</div>
+
   <font face= "Courier">
 <head><h1>Basics on Roblox Scripting</h1></head>
 
 <style>
+/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
 body {
   background: rgb(148,168,0);
 background: linear-gradient(90deg, rgba(148,168,0,1) 0%, rgba(241,255,0,1) 100%);
+text-align: center;
 }
 
   h4 { text-align: center }
 h2 { text-align: center }
-  h1 { text-align: center }
+  h1 { text-align: center background: rgb(255,255,255);
+background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(248,255,14,1) 49%, rgba(255,255,255,0) 100%);}
 p { text-align: center }
   #norequire1 {
 color: rgb(255,0,0);
@@ -33,11 +84,37 @@ Put your content in here
 color: rgb(255,0,0);
 color: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(128,0,0,1) 100%);
       }
-    
+
+    /* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 12px 15px;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #FFFF00;
+  color: black;
+}
 </style>
   <body>
-<h2>1. What is Roblox Scripting?</h2>
-
+<h2 id="images">1. What is Roblox Scripting?</h2>
     <p><h4>Roblox scripting uses and coding language called lua.<br> 
     Lua is just like all the other languages such as Javascript, Python etc.<br>
     In this webiste i will tell you how to script in roblox!</p></h4>
