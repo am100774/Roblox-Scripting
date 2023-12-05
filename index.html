@@ -9,14 +9,15 @@ alert('Hello! Welcome to my website! This website is all about roblox scripting'
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <div class="topnav" id="myTopnav">
-  <a href="https://www.w3schools.com">Videos</a>
+  <a href="#videos" class="active">Videos</a>
   <a href="#images" class="active">Images</a>
+ 
 
 
   </a>
 </div>
 
-  <font face= "Courier">
+  <font face= "Arial">
 <head><h1>Basics on Roblox Scripting</h1></head>
 
 <style>
@@ -41,7 +42,7 @@ function myFunction() {
 }
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 200px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive a.icon {
     position: absolute;
@@ -83,8 +84,17 @@ Put your content in here
       #norequire2 {
 color: rgb(255,0,0);
 color: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(128,0,0,1) 100%);
+}
+
+#norequire3 {
+color: rgb(255,0,0);
+color: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(128,0,0,1) 100%);
       }
 
+#require1 {
+ color: rgb(0,102,31);
+color: radial-gradient(circle, rgba(0,102,31,1) 0%, rgba(0,255,78,1) 100%);
+}
     /* Add a black background color to the top navigation */
 .topnav {
   background-color: #333;
@@ -94,7 +104,10 @@ color: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(128,0,0,1) 100%);
 /* Style the links inside the navigation bar */
 .topnav a {
   float: left;
-  color: #f2f2f2;
+  color: #FFFF00
+
+
+;
   text-align: center;
   padding: 12px 15px;
   text-decoration: none;
@@ -103,14 +116,14 @@ color: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(128,0,0,1) 100%);
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: #ddd;
-  color: black;
+  background-color: #000000;
+  color: yellow;
 }
 
 /* Add a color to the active/current link */
 .topnav a.active {
-  background-color: #FFFF00;
-  color: black;
+  background-color: #000000;
+  color: yellow;
 }
 </style>
   <body>
@@ -137,16 +150,86 @@ color: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(128,0,0,1) 100%);
     will get on later. So select the part and then click the "Properties" tab. The tab is in <br>
     the Explorer. When you click on the tab, you will be able to change the color and change if <br>
     part is collidable or not so test it out!</p>
+    
+    
+    
+    
+    <h2 id = "norequire3">Building (Coding = Not Required)</h2>
+
+<p>
+If you want to script, you first have to build something to put the scripts into. Or <br>
+you could just put the scripts into the baseplate which we will get onto it later. <br> In the properties tab, click the checkmark next to the "Anchor" option and make sure <br> there is a blue checkmark. If there isn't, Click on the box next to it. The anchor<br>option makes the parts stay still and they cannot fall down even if it is in the air. <br>
+Try to make a house using parts and also use the color selector in the properties tab.<p>
 
 
+<h2 id = "require1"> Script Basics (Printing) (Coding = Required) </h2> 
 
+<p>
+Here is when you actually start scripting but before that, you need some essential <br>
+tabs open. First, go to the view tab which is next to the plugins tab at the top. <br>
+Click on it and then go to the top left and you will see 2 big buttons with icons <br>
+called "Explorer" and "Properties". Make sure you have to selected if you dont then <br>
+click on them. Then there are some small icons next to them. When you hover over <br>
+them, it will tell you what they are and what they mean. Click on the <br>
+"Output, Terrian Editor, Toolbox, Command Bar, Script Performance and Script Recovery"<br> Icons. There! Now you have what you need. Now to create a script you have to go <br>
+to Explorer, ServerScriptService click the plus icon next to the ServerScriptService <br>
+tab and then press "Script". Now you must have a blank bage and a line of script <br>
+called "print("Hello world!"). Remove the Hello World and replace it with anything. <br>
+Then add another script saying "print ("Anythingyouwanthere")." Once you are done, <br>
+head to the top and click "Run." What it'll do is that it will execute the code you <br>
+put in the script and it will appear in the "Output" tab. Nice you learned the <br>
+print command. Try to make the print command say about your hobbies or about yourself!
+</p>
 
 
 
    
 <p id = "images">    
-<img src=https://devforum-uploads.s3.dualstack.us-east-2.amazonaws.com/uploads/original/4X/6/1/2/612a637d931f26143278e5988e0514e351b1117b.png width = "300">
- This is a part, the most important thing in studio
+<div>
+	<img src="data:image/jpeg;base64,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" width = "200">
+	<div>
+	<p> This is a part, the most basic and important thing in roblox studio. </p>
+	</div>
+	</div>
+  
+  <div>
+	<img src="data:image/png;base64,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" width = "200">
+	<div>
+  <p> This is the Explorer window, Here you will find all your parts, scripts etc and  <br>   if you name each and every thing, The Explorer tab will be very easy and useful. </p>
+	</div>
+	</div>
+  
+  <div>
+	<img src="https://devforum-uploads.s3.dualstack.us-east-2.amazonaws.com/uploads/original/4X/d/6/0/d60c93f758ed611fcc67fdd326c7584d9dd1f88f.png" width = "500">
+	<div>
+  <p> This is a Blank Script. This is a script which has never changed. Here <br>
+  you can make your script. </p>
+	</div>
+	</div>
+ 
+ <br>
+ <br>
+ 
+<p id = "videos">    
+
+  
+  The Dev King Beginner Script Tutorial
+  
+ <iframe width="560" height="315" src="https://www.youtube.com/embed/BkYwRdCukZA?si=CHGpd-feWT9ZEKm4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<div>
+  <p> If you are new then watch this video </p>
+  </div>
+  
+  
+  The Dev King Advanced Script Tutorial
+  
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/UoVYIZYKPOI?si=aeNelNwcLHEm7UdV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  
+  <div>
+  <p> If you are good at roblox scripting but you are not that good then watch this video</p>
+  </div>
+
 
   
 
